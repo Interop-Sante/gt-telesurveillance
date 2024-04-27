@@ -7,4 +7,4 @@ Email du GT :	[is-gt-telesurveillance@googlegroups.com](is-gt-telesurveillance@g
 
 ## Facturation
 
-Retrouvez les [exemples](/exemples/index.md) de messages de facturation.
+Retrouvez les [exemples](/facturation/index.md) de messages de facturation.
