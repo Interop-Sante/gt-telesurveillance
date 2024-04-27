@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsServeurActes xmlns="http://www.hprim.org/hprimXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hprim.org/hprimXML
+X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" version="2.4" acquittementAttendu="non" identifiantAttendu="non" realise="oui" interrogation="non">
+	<enteteMessage modeTraitement="reel" sens="prodServ">
+		<identifiantMessage>7468dab45add</identifiantMessage>
+		<dateHeureProduction>2024-01-15T18:00:00+01:00</dateHeureProduction>
+		<emetteur>
+			<agents>
+				<agent categorie="application">
+					<code>RCTM</code>
+					<libelle>Remote Cancer Treatment Monitoring</libelle>
+				</agent>
+			</agents>
+		</emetteur>
+		<destinataire>
+			<agents>
+				<agent categorie="application">
+					<code>somehospit</code>
+					<libelle>Système de facturation hospitalier</libelle>
+				</agent>
+			</agents>
+		</destinataire>
+		<commentaireMessage>Exemple de forfaits opérateur cumulés de télésurveillance (cancer)</commentaireMessage>
+	</enteteMessage>
+	<evenementServeurActe>
+		<patient confidentiel="non" anonyme="non">
+			<identifiant>
+				<recepteur etat="permanent" portee="local" referent="oui">
+					<!-- IPP de Madame Arthur dans le système de SomeHospital-->
+					<valeur>6540786534</valeur>
+				</recepteur>
+			</identifiant>
+			<personnePhysique sexe="F" informationQualifiee="oui">
+				<nomNaissance>Guilbert</nomNaissance>
+				<prenoms>
+					<prenom>Yvette</prenom>
+				</prenoms>
+				<dateNaissance dateIncertaine="non">
+					<date>1944-02-03</date>
+				</dateNaissance>
+			</personnePhysique>
+		</patient>
+		<venue confidentiel="non" anonyme="non" etat="encours" facturable="oui" prive="non">
+			<identifiant>
+				<recepteur etat="permanent" portee="local" referent="oui">
+					<valeur>465473</valeur>
+				</recepteur>
+			</identifiant>
+			<natureVenueHprim valeur="ext"/>
+			<entree typeEntree="directe">
+				<dateHeureOptionnelle>
+					<date>2023-07-20</date>
+				</dateHeureOptionnelle>
+				<modeEntree valeur="01"/>
+				<uniteFonctionnelleResponsable>
+					<code>Dpt_Onco</code>
+					<libelle>Departement Oncologique</libelle>
+				</uniteFonctionnelleResponsable>
+			</entree>
+		</venue>
+		<intervention>
+			<identifiant>
+				<emetteur>12345</emetteur>
+			</identifiant>
+			<demande originePrescription="autreSituation">
+				<datePrescription>
+					<date>2023-07-14</date>
+				</datePrescription>
+				<medecin lien="prsc">
+					<noRPPS>14970384964</noRPPS>
+					<personne>
+						<nomUsuel>Victor</nomUsuel>
+						<prenoms>
+							<prenom>Pierre</prenom>
+						</prenoms>
+					</personne>
+				</medecin>
+			</demande>
+		</intervention>
+		<actesNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">4748565420</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>1.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 1er forfait opérateur mensuel de cette activité de TLS débutée le 20/07/23 -->
+				<execute>
+					<date>2023-08-18</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>14970384964</noRPPS>
+							<personne>
+								<nomUsuel>Victor</nomUsuel>
+								<prenoms>
+									<prenom>Pierre</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM37</code>
+								<libelle>Médecin - Oncologie, opt radiothérapie (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Onco</code>
+						<libelle>Departement Oncologique</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur>4748565421</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>1.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 2e forfait opérateur mensuel de cette activité de TLS débutée le 20/07/23 -->
+				<execute>
+					<date>2023-09-17</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>14970384964</noRPPS>
+							<personne>
+								<nomUsuel>Victor</nomUsuel>
+								<prenoms>
+									<prenom>Pierre</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM37</code>
+								<libelle>Médecin - Oncologie, opt radiothérapie (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Onco</code>
+						<libelle>Departement Oncologique</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur>4748565422</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>1.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 3e forfait opérateur mensuel de cette activité de TLS débutée le 20/07/23 -->
+				<execute>
+					<date>2023-10-17</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>14970384964</noRPPS>
+							<personne>
+								<nomUsuel>Victor</nomUsuel>
+								<prenoms>
+									<prenom>Pierre</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM37</code>
+								<libelle>Médecin - Oncologie, opt radiothérapie (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Onco</code>
+						<libelle>Departement Oncologique</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur>4748565423</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>1.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 4e forfait opérateur mensuel de cette activité de TLS débutée le 20/07/23 -->
+				<execute>
+					<date>2023-11-16</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>14970384964</noRPPS>
+							<personne>
+								<nomUsuel>Victor</nomUsuel>
+								<prenoms>
+									<prenom>Pierre</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM37</code>
+								<libelle>Médecin - Oncologie, opt radiothérapie (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Onco</code>
+						<libelle>Departement Oncologique</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur>4748565424</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>1.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 5e forfait opérateur mensuel de cette activité de TLS débutée le 20/07/23 -->
+				<execute>
+					<date>2023-12-16</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>14970384964</noRPPS>
+							<personne>
+								<nomUsuel>Victor</nomUsuel>
+								<prenoms>
+									<prenom>Pierre</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM37</code>
+								<libelle>Médecin - Oncologie, opt radiothérapie (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Onco</code>
+						<libelle>Departement Oncologique</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur>4748565425</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>1.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 6e forfait opérateur mensuel de cette activité de TLS débutée le 20/07/23 -->
+				<execute>
+					<date>2024-01-15</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>14970384964</noRPPS>
+							<personne>
+								<nomUsuel>Victor</nomUsuel>
+								<prenoms>
+									<prenom>Pierre</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM37</code>
+								<libelle>Médecin - Oncologie, opt radiothérapie (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Onco</code>
+						<libelle>Departement Oncologique</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+		</actesNGAP>
+	</evenementServeurActe>
+</evenementsServeurActes>

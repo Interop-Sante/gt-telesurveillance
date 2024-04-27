@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evenementsServeurActes xmlns="http://www.hprim.org/hprimXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hprim.org/hprimXML
+X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" version="2.4" acquittementAttendu="non" identifiantAttendu="non" realise="oui" interrogation="non">
+	<enteteMessage modeTraitement="reel" sens="prodServ">
+		<identifiantMessage>7568bcd46bbc</identifiantMessage>
+		<dateHeureProduction>2024-07-22T18:00:00+01:00</dateHeureProduction>
+		<emetteur>
+			<agents>
+				<agent categorie="application">
+					<code>RDM</code>
+					<libelle>Remote Diabetes Monitoring</libelle>
+				</agent>
+			</agents>
+		</emetteur>
+		<destinataire>
+			<agents>
+				<agent categorie="application">
+					<code>somehospit</code>
+					<libelle>Système de facturation hospitalier</libelle>
+				</agent>
+			</agents>
+		</destinataire>
+		<commentaireMessage>Exemple de forfaits opérateur cumulés de télésurveillance avec majoration (diabète)</commentaireMessage>
+	</enteteMessage>
+	<evenementServeurActe>
+		<patient confidentiel="non" anonyme="non">
+			<identifiant>
+				<recepteur etat="permanent" portee="local" referent="oui">
+					<!-- IPP de Madame Arthur dans le système de SomeHospital-->
+					<valeur>6540786534</valeur>
+				</recepteur>
+				<numeroIdentifiantPatients>
+					<numeroIdentifiantPatient>
+						<identifiant>244021300106546</identifiant>
+						<autorite type="ISO">
+							<nom>ASIPSANTE-INS-NIR</nom>
+							<OID>1.2.250.1.213.1.4.8</OID>
+						</autorite>
+					</numeroIdentifiantPatient>
+				</numeroIdentifiantPatients>
+			</identifiant>
+			<personnePhysique sexe="F" informationQualifiee="oui">
+				<nomUsuel>Arthur</nomUsuel>
+				<nomNaissance>Guilbert</nomNaissance>
+				<prenoms>
+					<prenom>Yvette</prenom>
+				</prenoms>
+				<dateNaissance dateIncertaine="non">
+					<date>1944-02-03</date>
+				</dateNaissance>
+				<lieuNaissance>
+					<ville>Aix en Provence</ville>
+					<lieuNaissanceInsee>13001</lieuNaissanceInsee>
+				</lieuNaissance>
+				<prenomsNaissance>
+					<prenomNaissance>Yvette</prenomNaissance>
+					<prenomNaissance>Juliette</prenomNaissance>
+				</prenomsNaissance>
+			</personnePhysique>
+		</patient>
+		<venue confidentiel="non" anonyme="non" etat="encours" facturable="oui" prive="non">
+			<identifiant>
+				<recepteur etat="permanent" portee="local" referent="oui">
+					<valeur>562493</valeur>
+				</recepteur>
+			</identifiant>
+			<natureVenueHprim valeur="ext"/>
+			<entree typeEntree="directe">
+				<dateHeureOptionnelle>
+					<date>2024-01-25</date>
+				</dateHeureOptionnelle>
+				<modeEntree valeur="01"/>
+				<uniteFonctionnelleResponsable>
+					<code>Dpt_Diabet</code>
+					<libelle>Departement Diabétologie</libelle>
+				</uniteFonctionnelleResponsable>
+			</entree>
+		</venue>
+		<intervention>
+			<identifiant>
+				<emetteur>58675</emetteur>
+			</identifiant>
+			<demande originePrescription="autreSituation">
+				<identifiant>
+					<emetteur>65407545764</emetteur>
+				</identifiant>
+				<datePrescription>
+					<date>2024-01-10</date>
+				</datePrescription>
+				<medecin lien="prsc">
+					<noRPPS>10960285914</noRPPS>
+					<personne>
+						<nomUsuel>Perret</nomUsuel>
+						<prenoms>
+							<prenom>Jacques</prenom>
+						</prenoms>
+					</personne>
+				</medecin>
+			</demande>
+		</intervention>
+		<actesNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">5768345571</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>2.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 1er forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
+				<execute>
+					<date>2024-02-23</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>10960285914</noRPPS>
+							<personne>
+								<nomUsuel>Perret</nomUsuel>
+								<prenoms>
+									<prenom>Jacques</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM62</code>
+								<libelle>Médecin - Endocrinologie, diabétologie, nutrition (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Diabet</code>
+						<libelle>Departement Diabétologie</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">5768345572</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>2.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 2e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
+				<execute>
+					<date>2024-03-24</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>10960285914</noRPPS>
+							<personne>
+								<nomUsuel>Perret</nomUsuel>
+								<prenoms>
+									<prenom>Jacques</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM62</code>
+								<libelle>Médecin - Endocrinologie, diabétologie, nutrition (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Diabet</code>
+						<libelle>Departement Diabétologie</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">5768345573</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>2.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 3e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
+				<execute>
+					<date>2024-04-23</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>10960285914</noRPPS>
+							<personne>
+								<nomUsuel>Perret</nomUsuel>
+								<prenoms>
+									<prenom>Jacques</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM62</code>
+								<libelle>Médecin - Endocrinologie, diabétologie, nutrition (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Diabet</code>
+						<libelle>Departement Diabétologie</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">5768345574</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>2.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 4e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
+				<execute>
+					<date>2024-05-23</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>10960285914</noRPPS>
+							<personne>
+								<nomUsuel>Perret</nomUsuel>
+								<prenoms>
+									<prenom>Jacques</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM62</code>
+								<libelle>Médecin - Endocrinologie, diabétologie, nutrition (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Diabet</code>
+						<libelle>Departement Diabétologie</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">5768345575</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>2.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 5e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
+				<execute>
+					<date>2024-06-22</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>10960285914</noRPPS>
+							<personne>
+								<nomUsuel>Perret</nomUsuel>
+								<prenoms>
+									<prenom>Jacques</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM62</code>
+								<libelle>Médecin - Endocrinologie, diabétologie, nutrition (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Diabet</code>
+						<libelle>Departement Diabétologie</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
+				<identifiant>
+					<emetteur portee="local">5768345576</emetteur>
+				</identifiant>
+				<lettreCle>TVB</lettreCle>
+				<coefficient>2.00</coefficient>
+				<quantite>1</quantite>
+				<!-- Ceci est le 6e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
+				<execute>
+					<date>2024-07-22</date>
+				</execute>
+				<prestataire>
+					<medecins>
+						<medecin lien="exec">
+							<noRPPS>10960285914</noRPPS>
+							<personne>
+								<nomUsuel>Perret</nomUsuel>
+								<prenoms>
+									<prenom>Jacques</prenom>
+								</prenoms>
+							</personne>
+							<specialiteHprim valeur="membre_corps_medical">
+								<!-- le regex de l'élément code n'accepte pas les /, le code a donc été utilisé en remplaçant le / par un - -->
+								<code>G15_10-SM62</code>
+								<libelle>Médecin - Endocrinologie, diabétologie, nutrition (SM)</libelle>
+								<!-- le regex de l'élément dictionnaire n'accepte pas les . ni les / il n'est donc pas possible d'utiliser l'OID de la terminologie, ni son URL c'est donc le nom de la TRE dans les NOS qui a été utilisé-->
+								<dictionnaire>TRE-A02-ProfessionSavFaire-CISIS</dictionnaire>
+							</specialiteHprim>
+						</medecin>
+					</medecins>
+					<uniteFonctionnelle>
+						<code>Dpt_Diabet</code>
+						<libelle>Departement Diabétologie</libelle>
+					</uniteFonctionnelle>
+				</prestataire>
+			</acteNGAP>
+		</actesNGAP>
+	</evenementServeurActe>
+</evenementsServeurActes>
