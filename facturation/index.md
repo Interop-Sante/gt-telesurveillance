@@ -6,8 +6,8 @@ Les messages d’exemples Hprim XML pour la collecte du forfait opérateur sont 
 
 ## Exemple 1 – télésurveillance de cancer
 
-- [exemples/ExempleTLScancerFluxForfaitOperateur_HprimXml_mensuelleV5.xml](Exemple de facturation mensuelle : la 6ème période mensuelle)
-- [exemples/ExempleTLScancerFluxForfaitOperateur_HprimXml_semestrielV5.xml](Exemple de facturation cumulée sur une période de six mois)
+- [Exemple de facturation mensuelle : la 6ème période mensuelle](exemples/ExempleTLScancerFluxForfaitOperateur_HprimXml_mensuelleV5.xml)
+- [Exemple de facturation cumulée sur une période de six mois](exemples/ExempleTLScancerFluxForfaitOperateur_HprimXml_semestrielV5.xml)
 
 ## Exemple 2 – télésurveillance de diabète avec majoration
 
