@@ -1,4 +1,4 @@
-# Exemples de messages de facturation de Télésurveillance médicale
+# Exemples de message de facturation de Télésurveillance médicale
 
 Le document "Guide d’implémentation de HPRIM XML pour la collecte du forfait opérateur en milieu établissement de soins", produit par le groupe de travail contient des exemples permettant de comprendre comment mettre en oeuvre cette facturation. 
 
