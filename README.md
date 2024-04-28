@@ -1,4 +1,4 @@
-![InteropSanté](images/interopsante.jpg)
+![InteropSanté](images/interopsante.jpg height=220)
 
 # gt-telesurveillance
 Groupe de Travail de standardisation de l'interopérabilité pour la télésurveillance médicale
