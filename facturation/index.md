@@ -2,7 +2,7 @@
 
 Le document "Guide d’implémentation de HPRIM XML pour la collecte du forfait opérateur en milieu établissement de soins", produit par le groupe de travail contient des exemples permettant de comprendre comment mettre en oeuvre cette facturation. 
 
-Les messages d’exemples [Hprim XML](https://www.interopsante.org/412_p_19348/documents-publics.html) pour la collecte du forfait opérateur sont les suivants : 
+Les messages d’exemple [Hprim XML](https://www.interopsante.org/412_p_19348/documents-publics.html) pour la collecte du forfait opérateur sont les suivants : 
 
 ## Exemple 1 – télésurveillance de cancer
 
