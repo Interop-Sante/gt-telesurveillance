@@ -11,5 +11,5 @@ Les messages d’exemple [Hprim XML](https://www.interopsante.org/412_p_19348/do
 
 ## Exemple 2 – télésurveillance de diabète avec majoration
 
-- Exemple de facturation mensuelle
+- [Exemple de facturation mensuelle](ExempleTLSdiabeteFluxForfaitOperateur_HprimXml_mensuelle_avec_majorationV3.xml)
 - [Exemple de facturation cumulée sur une période de six mois](ExempleTLSdiabeteFluxForfaitOperateur_HprimXml_semestriel_avec_majorationV3.xml)
