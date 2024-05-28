@@ -30,7 +30,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 					<valeur>6540786534</valeur>
 				</recepteur>
 			</identifiant>
-			<personnePhysique sexe="F" informationQualifiee="oui">
+			<personnePhysique sexe="F" informationQualifiee="non">
 				<nomNaissance>Guilbert</nomNaissance>
 				<prenoms>
 					<prenom>Yvette</prenom>
