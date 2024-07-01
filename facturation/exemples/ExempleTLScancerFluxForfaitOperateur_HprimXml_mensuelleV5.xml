@@ -87,7 +87,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 6ème forfait opérateur mensuel de cette activité -->
 				<execute>
-					<date>2024-01-15</date>
+					<date>20234-12-17</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -113,6 +113,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Oncologique</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0006</numero>
+					<date>2024-01-15</date>
+				</factureRealisateur>
 			</acteNGAP>
 		</actesNGAP>
 	</evenementServeurActe>
