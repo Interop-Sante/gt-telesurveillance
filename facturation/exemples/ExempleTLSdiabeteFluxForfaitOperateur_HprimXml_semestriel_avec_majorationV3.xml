@@ -108,7 +108,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 1er forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
 				<execute>
-					<date>2024-02-23</date>
+					<date>2024-01-25</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -134,6 +134,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Diabétologie</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0021</numero>
+					<date>2024-02-23</date>
+				</factureRealisateur>
 			</acteNGAP>
 			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
 				<identifiant>
@@ -144,7 +148,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 2e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
 				<execute>
-					<date>2024-03-24</date>
+					<date>2024-02-24</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -170,6 +174,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Diabétologie</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0022</numero>
+					<date>2024-03-24</date>
+				</factureRealisateur>
 			</acteNGAP>
 			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
 				<identifiant>
@@ -180,7 +188,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 3e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
 				<execute>
-					<date>2024-04-23</date>
+					<date>2024-03-25</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -206,6 +214,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Diabétologie</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0023</numero>
+					<date>2024-04-23</date>
+				</factureRealisateur>
 			</acteNGAP>
 			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
 				<identifiant>
@@ -216,7 +228,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 4e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
 				<execute>
-					<date>2024-05-23</date>
+					<date>2024-04-24</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -242,6 +254,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Diabétologie</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0024</numero>
+					<date>2024-05-23</date>
+				</factureRealisateur>
 			</acteNGAP>
 			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
 				<identifiant>
@@ -252,7 +268,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 5e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
 				<execute>
-					<date>2024-06-22</date>
+					<date>2024-05-24</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -278,6 +294,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Diabétologie</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0025</numero>
+					<date>2024-06-22</date>
+				</factureRealisateur>
 			</acteNGAP>
 			<acteNGAP action="creation" facturable="oui" valide="oui" facture="oui">
 				<identifiant>
@@ -288,7 +308,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 6e forfait opérateur mensuel de cette activité de TLS débutée le 25/01/24 -->
 				<execute>
-					<date>2024-07-22</date>
+					<date>2024-06-23</date>
 				</execute>
 				<prestataire>
 					<medecins>
@@ -314,6 +334,10 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 						<libelle>Departement Diabétologie</libelle>
 					</uniteFonctionnelle>
 				</prestataire>
+				<factureRealisateur>
+					<numero>EX0026</numero>
+					<date>2024-07-01</date>
+				</factureRealisateur>
 			</acteNGAP>
 		</actesNGAP>
 	</evenementServeurActe>
