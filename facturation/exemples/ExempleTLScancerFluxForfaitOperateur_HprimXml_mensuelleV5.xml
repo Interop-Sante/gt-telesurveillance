@@ -87,7 +87,7 @@ X:\emission\divers\hprim\schemaXml\ccam\v2_4\msgEvenementsServeurActes2_4.xsd" v
 				<quantite>1</quantite>
 				<!-- Ceci est le 6ème forfait opérateur mensuel de cette activité -->
 				<execute>
-					<date>20234-12-17</date>
+					<date>2023-12-17</date>
 				</execute>
 				<prestataire>
 					<medecins>
